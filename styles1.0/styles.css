@@ -1,0 +1,46 @@
+body{
+    background-color: black
+    color(srgb red green blue);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+h1{
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color:blue;
+    text-decoration: underline;
+    font-style:italic;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+h3{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-size: 25px;
+}
+
+/*this is a comment */
+#pinkparagraph{
+    color:pink;
+
+}
+
+{redtext
+    color: red;
+    
+}
+
+.pretty{
+    font-family: 'Courier New', Courier, monospace;
+}

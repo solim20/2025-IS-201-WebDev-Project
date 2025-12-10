@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Butterflies</title>
+
+<style>
+    body {
+        font-family: "Georgia", serif;
+        background: linear-gradient(#ffcce9, #ffb3e6, #ff99dd);
+        color: #863a6f;
+        margin: 0;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        text-align: center;
+        color: #d12c86;
+        font-size: 3rem;
+        text-shadow: 3px 3px #ffb3d9;
+        border: 4px solid #ff91c9;
+        padding: 15px;
+        border-radius: 20px;
+        background: #ffd6ea;
+    }
+
+    .section {
+        border: 3px dashed #ff7ab8;
+        padding: 20px;
+        border-radius: 20px;
+        background: #fff0f7;
+        margin: 25px 0;
+    }
+
+    .section p {
+        font-size: 1.15rem;
+        font-weight: bold;
+        background: #ffe9f3;
+        padding: 12px;
+        border-radius: 12px;
+        border: 2px dotted #ff94c9;
+        margin-bottom: 12px;
+    }
+
+    .photo-box {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .photo-box img {
+        width: 180px;
+        border-radius: 18px;
+        border: 3px solid #ff8ec8;
+        box-shadow: 0 0 12px #ffb3e6;
+    }
+
+    ul {
+        background: #fff6fa;
+        padding: 20px;
+        border-radius: 15px;
+        border: 3px solid #ffaad5;
+    }
+
+    ul li {
+        margin: 8px 0;
+        font-size: 1.05rem;
+        font-weight: bold;
+    }
+
+    a {
+        color: #c7007d;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* 🦋 Butterfly container */
+    .butterfly {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        pointer-events: auto;
+        cursor: pointer;
+        animation: floatUp 14s linear infinite, tilt 3s ease-in-out infinite alternate;
+    }
+
+    .butterfly img {
+        width: 100%;
+        height: 100%;
+        animation: flap 0.8s infinite alternate ease-in-out;
+    }
+
+    @keyframes flap {
+        0% { transform: scaleX(1); }
+        100% { transform: scaleX(0.7); }
+    }
+
+    @keyframes tilt {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(12deg); }
+    }
+
+    @keyframes floatUp {
+        0% { transform: translateY(100vh) translateX(0); }
+        50% { transform: translateY(50vh) translateX(40px) rotate(5deg); }
+        100% { transform: translateY(-10vh) translateX(-40px) rotate(-5deg); }
+    }
+
+    /* ✨ Sparkles on hover/click */
+    .spark {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.9;
+        filter: blur(2px);
+        animation: sparklePop 0.8s ease-out forwards;
+    }
+
+    @keyframes sparklePop {
+        0% { transform: scale(0.4); opacity: 1; }
+        100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    /* ✨ soft falling sparkles */
+    .sparkle {
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        filter: blur(2px);
+        animation: fall 6s linear infinite;
+        pointer-events: none;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(-10px) scale(1); opacity: 1; }
+        100% { transform: translateY(100vh) scale(0.3); opacity: 0; }
+    }
+
+    /* ☁ pastel drifting clouds */
+    .cloud {
+        position: fixed;
+        background: rgba(255,255,255,0.45);
+        border-radius: 50%;
+        filter: blur(25px);
+        animation: drift 40s linear infinite;
+    }
+
+    @keyframes drift {
+        0% { transform: translateX(-20vw); }
+        100% { transform: translateX(120vw); }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Butterflies & Their Beautiful Diversity</h1>
+
+<div class="section">
+    <div class="photo-box">
+        <img src="https://i.imgur.com/KWy7sGe.jpeg">
+    </div>
+
+    <p><strong>Butterflies are nature’s artwork — delicate, colorful, and gracefully floating through the world like tiny paintings in motion.</strong></p>
+
+    <p><strong>Their wings reflect millions of years of evolution, shaped by climate, habitat, and survival strategies.</strong></p>
+
+    <p><strong>Fun Fact: Butterflies see UV colors that humans cannot — flowers literally glow for them.</strong></p>
+
+    <p><strong>Fun Fact: A butterfly tastes with its feet, sensing chemicals in plants instantly.</strong></p>
+
+    <p><strong>Fun Fact: Many butterflies mimic eyes or even other animals to scare predators away.</strong></p>
+</div>
+
+<div class="section">
+    <h2 style="color:#d12c86;">Butterflies in the United States</h2>
+
+    <div class="photo-box">
+        <img src="https://i.imgur.com/Ie7K9Da.jpeg">
+    </div>
+
+    <ul>
+        <li>⭐ <a href="https://en.wikipedia.org/wiki/Monarch_butterfly" target="_blank">Monarch Butterfly</a></li>
+        <li>⭐ <a href="https://en.wikipedia.org/wiki/Red_admiral" target="_blank">Red Admiral</a></li>
+        <li>⭐ <a href="https://en.wikipedia.org/wiki/Swallowtail_butterfly" target="_blank">Eastern Tiger Swallowtail</a></li>
+        <li>⭐ <a href="https://en.wikipedia.org/wiki/Gulf_fritillary" target="_blank">Gulf Fritillary</a></li>
+        <li>⭐ <a href="https://en.wikipedia.org/wiki/California_dogface_butterfly" target="_blank">California Dogface</a></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2 style="color:#d12c86;">Butterflies Around the World</h2>
+
+    <div class="photo-box">
+        <img src="https://i.imgur.com/1KwqSzU.jpeg">
+    </div>
+
+    <ul>
+        <li>🌸 <a href="https://en.wikipedia.org/wiki/Morpho" target="_blank">Morpho Butterfly (South America)</a></li>
+        <li>🌸 <a href="https://en.wikipedia.org/wiki/Birdwing" target="_blank">Birdwing Butterfly (Asia)</a></li>
+        <li>🌸 <a href="https://en.wikipedia.org/wiki/Glasswing_butterfly" target="_blank">Glasswing Butterfly</a></li>
+        <li>🌸 <a href="https://en.wikipedia.org/wiki/Rajah_brooke%27s_birdwing" target="_blank">Rajah Brooke’s Birdwing</a></li>
+        <li>🌸 <a href="https://en.wikipedia.org/wiki/Peacock_butterfly" target="_blank">Peacock Butterfly</a></li>
+    </ul>
+</div>
+
+<!-- 🦋 floating, flapping, spinning butterflies -->
+<script>
+const butterflyImg = "https://i.imgur.com/NT7pN0v.png";
+
+for (let i = 0; i < 14; i++) {
+    let b = document.createElement("div");
+    b.className = "butterfly";
+    b.style.left = Math.random() * 100 + "vw";
+    b.style.animationDuration = (12 + Math.random() * 8) + "s";
+    b.style.animationDelay = Math.random() * 6 + "s";
+
+    let img = document.createElement("img");
+    img.src = butterflyImg;
+
+    b.appendChild(img);
+
+    // sparkle on hover
+    b.addEventListener("mouseover", () => createSparkles(b));
+
+    // sparkle on click
+    b.addEventListener("click", (e) => {
+        e.stopPropagation();
+        createSparkles(b);
+    });
+
+    document.body.appendChild(b);
+}
+
+// sparkle burst animation
+function createSparkles(butterfly) {
+    for (let i = 0; i < 8; i++) {
+        let s = document.createElement("div");
+        s.className = "spark";
+        s.style.left = butterfly.offsetLeft + 20 + "px";
+        s.style.top = butterfly.offsetTop + 20 + "px";
+        s.style.transform = `translate(${Math.random()*40-20}px, ${Math.random()*40-20}px)`;
+        document.body.appendChild(s);
+
+        setTimeout(() => s.remove(), 900);
+    }
+}
+
+// ✨ falling sparkles
+for (let i = 0; i < 90; i++) {
+    let s = document.createElement("div");
+    s.className = "sparkle";
+    s.style.left = Math.random() * 100 + "vw";
+    s.style.animationDuration = (5 + Math.random() * 4) + "s";
+    s.style.animationDelay = Math.random() * 5 + "s";
+    document.body.appendChild(s);
+}
+
+// ☁ pastel drifting clouds
+for (let i = 0; i < 6; i++) {
+    let c = document.createElement("div");
+    c.className = "cloud";
+    c.style.width = (150 + Math.random() * 200) + "px";
+    c.style.height = (70 + Math.random() * 100) + "px";
+    c.style.top = Math.random() * 60 + "vh";
+    c.style.animationDuration = (50 + Math.random() * 20) + "s";
+    document.body.appendChild(c);
+}
+</script>
+
+</body>
+</html>
+
